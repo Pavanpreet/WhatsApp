@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/my_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/design_mylist">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/mylist_img"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:src="@drawable/man1"/>
+        <LinearLayout
+            android:id="@+id/mid_LL"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/mylist_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="12sp"/>
+            <TextView
+                android:id="@+id/mylist_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Message"
+                android:layout_marginTop="11sp"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+            <TextView
+                android:id="@+id/mylist_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:26 am"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_Image"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:src="@drawable/regicon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimary"/>
+
+    <EditText
+        android:id="@+id/user_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_Image"
+        android:inputType="textMultiLine"
+        android:hint="User Name"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textColorHint="@android:color/black"
+        android:layout_margin="15sp"
+        android:padding="15sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/user_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_Name"
+        android:inputType="textMultiLine"
+        android:hint="Hey I'm available here"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textColorHint="@android:color/black"
+        android:layout_margin="15sp"
+        android:padding="15sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        />
+    <Button
+        android:id="@+id/user_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_status"
+        android:layout_margin="20sp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="update"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_light"/>
+
+</RelativeLayout>
